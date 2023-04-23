@@ -1,0 +1,111 @@
+/*Colours used, shades of black, orange, green and blue*/
+
+body {font-family: "Merriweather", "Constantia", "Calibri";
+    line-height: 1.5em;
+    text-align: center;}
+
+h1, h2, h3, h4 {font-family: "Times New Roman", sans-serif;}
+
+body li {list-style: none;}
+
+img {max-width: 100%;}
+
+img {padding: 1px;}
+
+form {background-color: lemonchiffon;
+    border: round 5px gold;}
+
+iframe {max-width: 100%;}
+
+p {padding: 2.5px;}
+
+.grid {max-width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;}
+
+.image1, .image2, .image3 {padding-top: 5px;}
+
+.image1 p, .image2 p, .image3 p {font-style: italic;}
+
+.image1 p a, .image2 p a, .image3 p a {color: royalblue;}
+
+address {max-width: 100%;}
+
+.gridContain a:hover {color: royalblue;
+        background-color: blanchedalmond;}
+
+a:visited {color: coral;}
+
+h1 {font-size: 1.9em;}
+
+h2 {font-size: 1.7em;}
+
+h3 {font-size: 1.4em;}
+
+h4 {font-size: 1.2em;}
+
+a {text-decoration: none;}
+
+.navbar .icon {display: none;}
+
+.navbar {overflow: hidden;}
+
+.navbar a {display: inline-block;
+        color:navy;
+        background-color: #FF9E3D;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        float: right;
+        text-decoration: none;
+        font-family: "Times New Roman", sans-serif;}
+
+.navbar a:hover {background-color: #ff4f00; 
+                color:royalblue;}
+
+.navbar .icon {display: none;}
+
+@media screen and (max-width: 900px) {
+.navbar a:not(:first-child) {display: none;}
+.navbar a.icon {float: right;
+                display: block;}
+}
+
+@media screen and (max-width: 900px) {
+.navbar.responsive {position: relative;}
+    
+.navbar.responsive a.icon {position: absolute;
+                            right: 0;
+                            top: 0;}
+    
+.navbar.responsive a {float: none;
+                    display: block;
+                    text-align: left;}
+}
+
+@media screen and (min-width: 900px) {
+    
+    .grid {grid-template-columns: repeat(12, 8.3%);
+                    grid-column-gap: 0.25em;
+                    grid-row-gap:2em;}
+    
+    .navbar .icon {display: none;}
+
+    .logo {grid-column: 1/5;
+            float: left;}
+    
+    .navbar {grid-column: 5/13;}
+    
+    .work1Img {grid-column: 2/6;}
+    
+    .work1Txt {grid-column: 8/12;}
+    
+    .work2Img {grid-column: 2/6;}
+    
+    .work2Txt {grid-column: 8/12;}
+    
+    .button {grid-column: 1/3;}
+}

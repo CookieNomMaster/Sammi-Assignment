@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <title>Sammi's Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="icon" href="images/cookies.jpg">
+    
+    <script src="js/script.js" defer></script>
+    
+</head>
+
+<body onload="createCaptcha()">
+    
+<div class="grid">
+    
+    <!--    Section 1 of Home Page  -->
+        
+    <div class="logo">
+        <a href="homepage.html"><img src="images/cookies.jpg"></a>
+    </div>
+    
+    <nav class="navbar" id="myNavbar">
+        <a href="homepage.html">Home Page</a>
+        <a href="education.html">Education</a>
+        <a href="leavingCert.html">Leaving Certificate</a>
+        <a href="workExp.html">Work Experience</a>
+        <a href="intHob.html">Interests & Hobbies</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </nav>
+    
+    
+    <div class="begin">
+        <h1> Contact Sammi </h1>
+        <p> After reading and looking through the pages, please do contact me. Please make it work related as I would not like any non-neccesary emails. </p>
+    </div>
+        
+    <!--    Form Section of Contact Us Page -->
+    
+    <div class="form">
+        
+    <form id="formcomp" action="http://litstudentprojects.net/rdwd-contact-response.php" method="post">
+        
+        <fieldset>
+            
+            <legend>Contact</legend>
+            
+            <p>Please do give a proper email...</p>
+            
+            <ul>
+                <li><label class="col1" for="name">Name*: </label><input type="text" name="name" id="name" pattern="[A-Za-z]{0-20}"><span id="error1"></span></li>
+                <li><label class="col2" for="company_name">Company Name: </label><input type="text" name="company_name" id="company_name"></li>
+                <li><label class="col3" for="website">Website*: </label><input type="text" name="website" id="website"><span id="error2"></span></li>
+                <li><label class="col4" for="email1">Email*: </label><input type="email" name="email1" id="email1"><span id="error3"></span></li>
+                <li><label class="col5" for="email2">Retype your Email*: </label><input type="email" name="email2" id="email2"><span id="error4"></span></li>
+                <li><label class="col6" for="query"> Query/Comment*: </label><textarea name="query" rows="5" cols="50" id="query"></textarea><span id="error5"></span></li>
+            </ul>
+            
+            <div id="captcha"> </div>
+            <input type="text" placeholder="Captcha" id="cpatchaText"><span id="error6"></span>
+            
+            <p><input type="submit" value="Continue!" id="submit"> | <input value="New Captcha" id="restart" onclick="createCaptcha()"></button></p>
+            
+            <p><i>* required fields</i></p>
+            
+        </fieldset>
+    
+        <br>
+        
+        <input type="hidden" name="portfolio" value="Sammi/Cookie">
+        
+    </form>   
+        
+    </div>
+    
+    
+</div>
+    
+</body>
+</html>
